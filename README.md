@@ -80,6 +80,12 @@ Table house {
   created_at timestamp
   updated_at timestamp
 }
+
+Ref: "car"."id" < "person"."id"
+
+Ref: "house"."id" < "person"."id"
+
+Ref: "car"."id" < "house"."id"
 ```
 
 - Add foreign keys to create relationships between models
